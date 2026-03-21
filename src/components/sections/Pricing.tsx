@@ -2,9 +2,8 @@
 
 import { Check, X } from "lucide-react"
 
-import { Button, buttonVariants } from "@/components/ui/button"
+import { buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import Link from "next/link"
 import { cn } from "@/lib/utils"
 
 const tiers = [
@@ -116,15 +115,15 @@ export function Pricing() {
                                 </ul>
                             </CardContent>
                             <CardFooter className="w-full">
-                                <Link
+                                <a
                                     href={tier.href}
                                     className={buttonVariants({
-                                        variant: tier.mostPopular ? "default" : "outline",
+                                        variant: "default",
                                         className: "w-full"
                                     })}
                                 >
                                     {tier.cta}
-                                </Link>
+                                </a>
                             </CardFooter>
                         </Card>
                     ))}

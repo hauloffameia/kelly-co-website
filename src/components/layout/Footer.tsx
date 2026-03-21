@@ -58,8 +58,8 @@ export function Footer() {
                     <div>
                         <h3 className="font-semibold mb-4">Contact</h3>
                         <ul className="space-y-3 text-sm text-muted-foreground">
-                            <li><a href="tel:555-0123" className="hover:text-primary transition-colors">(555) 555-0123</a></li>
-                            <li><a href="mailto:info@kellyandco.com" className="hover:text-primary transition-colors">info@kellyandco.com</a></li>
+                            <li><a href="tel:319-988-1650" className="hover:text-primary transition-colors">319-988-1650</a></li>
+                            <li><a href="mailto:kellycopropertyservices@gmail.com" className="hover:text-primary transition-colors">kellycopropertyservices@gmail.com</a></li>
                             <li><span className="hover:text-primary transition-colors">Service Area: Cedar Valley, Iowa</span></li>
                         </ul>
                     </div>

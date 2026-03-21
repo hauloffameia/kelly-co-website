@@ -17,10 +17,6 @@ const faqs = [
         answer: "We proudly serve the Cedar Valley in Iowa and surrounding suburbs. Contact us to see if you fall within our regular service routes.",
     },
     {
-        question: "Are your lawn care programs kid and pet safe?",
-        answer: "Safety is our priority. While we do use commercial-grade fertilizers and weed controls when requested, we always provide clear instructions on how long to keep pets and children off the treated areas (usually 24 hours), or we can discuss organic options.",
-    },
-    {
         question: "Do I need to be home when you service my property?",
         answer: "Not at all. As long as we have access to all areas requiring service (like unlocked gates for fenced backyards), our team can complete the work while you are away.",
     },
@@ -34,7 +30,7 @@ const faqs = [
     },
     {
         question: "How does billing work?",
-        answer: "For regular maintenance, we keep a card on file and bill monthly. For larger landscaping projects, we typically require a deposit upfront with the remainder due upon completion of the work.",
+        answer: "Billing is simple and hassle-free. We keep a card on file and charge automatically after each service is completed — no invoices to chase, no billing cycles to track. For larger landscaping projects, we typically require a deposit upfront with the remainder billed once the work is done.",
     },
 ]
 

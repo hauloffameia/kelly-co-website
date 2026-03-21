@@ -12,7 +12,20 @@ const font = Inter({
 
 export const metadata: Metadata = {
   title: "Kelly & Co Property Services | Expert Mowing & Landscaping",
-  description: "Professional mowing, landscaping, and property maintenance services to keep your outdoor spaces looking perfect.",
+  description: "Professional mowing, landscaping, and property maintenance services for the Cedar Valley, Iowa. Get a free estimate today.",
+  openGraph: {
+    title: "Kelly & Co Property Services",
+    description: "Professional mowing, landscaping, and property maintenance for the Cedar Valley, Iowa.",
+    siteName: "Kelly & Co Property Services",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary",
+    title: "Kelly & Co Property Services",
+    description: "Professional mowing, landscaping, and property maintenance for the Cedar Valley, Iowa.",
+  },
+  metadataBase: new URL("https://kelly-co.pages.dev"),
 };
 
 export default function RootLayout({
@@ -27,8 +40,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
           disableTransitionOnChange
         >
           <Navbar />

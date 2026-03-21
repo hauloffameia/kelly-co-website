@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { ArrowRight, Leaf } from "lucide-react"
+import { ArrowRight, Leaf, Phone } from "lucide-react"
 
 import { buttonVariants } from "@/components/ui/button"
 
@@ -18,8 +18,8 @@ export function Hero() {
 
             <div className="container mx-auto px-4 md:px-8 text-center">
                 {/* Logo */}
-                <div className="mx-auto mb-10 w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-2 border-primary/20 bg-white shadow-lg flex items-center justify-center p-2">
-                    <Image src="/logo.png" alt="Kelly & Co Property Services" width={176} height={176} className="object-contain w-full h-full" unoptimized />
+                <div className="mx-auto mb-10 w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-primary/20 bg-white shadow-lg flex items-center justify-center p-2">
+                    <Image src="/logo.png" alt="Kelly & Co Property Services" width={256} height={256} className="object-contain w-full h-full" unoptimized />
                 </div>
 
                 <div className="mx-auto max-w-3xl">
@@ -27,7 +27,7 @@ export function Hero() {
                         Expert Lawn Care & Landscaping
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
-                        Professional mowing, landscaping, and property maintenance services. We take pride in keeping your outdoor spaces looking perfect year-round, so you don't have to.
+                        Professional mowing, landscaping, and property maintenance services. We take pride in keeping your outdoor spaces looking perfect year-round.
                     </p>
                     <p className="text-sm font-medium text-primary mb-10">
                         Proudly Serving the Cedar Valley, Iowa
@@ -41,13 +41,20 @@ export function Hero() {
                             Get a Free Quote
                             <ArrowRight className="h-4 w-4" />
                         </Link>
-                        <Link
-                            href="#services"
-                            className={buttonVariants({ variant: "outline", size: "lg", className: "w-full sm:w-auto gap-2" })}
+                        <a
+                            href="tel:319-988-1650"
+                            className={buttonVariants({ variant: "default", size: "lg", className: "w-full sm:w-auto gap-2" })}
                         >
-                            <Leaf className="h-4 w-4 text-primary" />
+                            <Phone className="h-4 w-4" />
+                            319-988-1650
+                        </a>
+                        <a
+                            href="#services"
+                            className={buttonVariants({ variant: "default", size: "lg", className: "w-full sm:w-auto gap-2" })}
+                        >
+                            <Leaf className="h-4 w-4" />
                             View Services
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>
